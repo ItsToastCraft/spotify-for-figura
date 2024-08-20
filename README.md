@@ -16,7 +16,8 @@ This is a project that allows you to visualize the currently playing track in fi
 To start, create a `client_data` file in `figura/data/spotify/client_data` and insert a json table of credentials
 
 ### Example
-```{
+```
+{
     "id": <CLIENT_ID>,
     "secret", <CLIENT_SECRET>
     "refresh_token": <REFRESH_TOKEN>
