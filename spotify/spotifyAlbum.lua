@@ -48,7 +48,7 @@ function album.cache()
     local async
 
     if albumCache[songData.item.album.name] == nil then
-        local request = net.http:request("https://res.cloudinary.com/dwsrg2hyo/image/fetch/f_png/" ..
+        local request = net.http:request("<CONVERTER>" .. -- Add link to jpg to png thing
             songData.item.album.images[3].url)
         local future = request:send() -- Fetches the album cover image from a cdn that converts it to png form
 
