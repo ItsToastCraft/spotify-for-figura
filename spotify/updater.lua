@@ -110,9 +110,9 @@ local function updateTrack()
             runLater(20, function() pings.oldData(songData) update() end)
     end
 end
-
-local skip = keybinds:newKeybind("Skip", "scancode.281")
-skip:onPress(function() runLater(10,function() update() end) end) -- add a little delay so you don't get the same song :p
+-- Oh yea these won't work for y'all unless you have a keybind that skips it outside of Minecraft.
+--local skip = keybinds:newKeybind("Skip", "scancode.281")
+--skip:onPress(function() runLater(10,function() update() end) end) -- add a little delay so you don't get the same song :p
 
 events.tick:register(function() updateTrack() if startup then progressBar:setText(album.createProgressBar(startup)) end end)
 
