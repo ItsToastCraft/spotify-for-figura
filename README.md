@@ -40,4 +40,5 @@ By default it will fetch album covers from `https://res.cloudinary.com/toasts/` 
 ### Credits
 * [manuel_2867](https://github.com/Manuel-3) - [runLater](https://github.com/Manuel-3/figura-scripts/blob/a598b44bdbed7877f1440d106d91ef1e194bc635/src/runLater/runLater.lua)
 * [auriafoxgirl](https://github.com/auriafoxgirl) - base64 library
+* [4P5](https://github.com/4P5) - promisesAPI
 ![Spotify Display in-game](image.png)
