@@ -1,9 +1,9 @@
 {
-  "name": "Spotify Player",
-  "description": "A simple display for Spotify",
+  "name": "Figurify",
+  "description": "",
   "authors": [
-    "ToastTextures"
+    ""
   ],
-  "color": "#1dd05d"
-
+  "color": "#1cc056",
+  "autoScripts": ["startup", "login"]
 }
