@@ -22,7 +22,7 @@ To start, create a `client_data.json` file in `figura/data/spotify/client_data.j
 ```
 {
     "id": <CLIENT_ID>,
-    "secret", <CLIENT_SECRET>
+    "secret": <CLIENT_SECRET>,
     "refresh_token": <REFRESH_TOKEN>
 }
 ```
