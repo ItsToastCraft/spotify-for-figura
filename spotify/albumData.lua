@@ -2,6 +2,7 @@ local album = {}
 --=Libraries=--
 local promise = require("libraries.external.promise")
 local songData, albumCache
+local size = 32
 --=Data Storage=--
 if host:isHost() then
     config:name("spotify_preferences")
@@ -41,7 +42,7 @@ function album.cache(callback)
     local cache = albumCache
     if cache[songData.album_name] == nil then
         local request = net.http:request(
-            "https://res.cloudinary.com/toasts/image/fetch/f_png/c_scale,h_32,w_32/" ..                              -- Add link to jpg to png thing
+            "https://res.cloudinary.com/toasts/image/fetch/f_png/c_scale,h_" .. size .. ",w_" .. size .. "/" ..                              -- Add link to jpg to png thing
             songData.album_cover)
         local future = request:send()                                                                                                             -- Fetches the album cover image from a cdn that converts it to png form
         return promise.await(future):then64(function(data) 

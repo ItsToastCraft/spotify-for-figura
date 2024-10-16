@@ -108,6 +108,7 @@ local function updateTrack()
         end
         if time % 2400 == 600 then
             runLater(20, function() pings.oldData(songData) update() end)
+        end
     end
 end
 -- Oh yea these won't work for y'all unless you have a keybind that skips it outside of Minecraft.
